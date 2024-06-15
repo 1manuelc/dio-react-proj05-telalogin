@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Página básica de Login
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <img src='https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' alt='React'>
+  <img src='https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white' alt='React Hook Form'>
+  <img src='https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white' alt='TypeScript'>
+  <img src='https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white' alt='Vite'>
+  <img src='https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white' alt='Yarn'>
 
-Currently, two official plugins are available:
+Este projeto objetiva implementar uma página de login básica e funcional com validação dos campos de email e senha.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Deploy atualizado na Vercel](https://dio-react-proj05-telalogin.vercel.app/)
 
-## Expanding the ESLint configuration
+## Funcionalidades básicas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Login funcional, verificando a validade dos campos e mostrando mensagens de erro no formulário.
 
-- Configure the top-level `parserOptions` property like this:
+## Implementação
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+O projeto foi feito em `React` com `TypeScript` e construído utilizando `Vite`, utilizando como base as dependências:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- `react-hook-form`: para lidar com formulários de autenticação.
+- `yup`: para validar os formulários de autenticação.
+
+obs: este projeto foi prototipado usando Figma, caso queira implementá-lo com base no protótipo para fins de estudo [acesse o protótipo clicando aqui](https://www.figma.com/design/1Jq5tK3sKmmWd1rdoFPnL8/dio-react-proj05-telalogin?m=dev&node-id=0-1).
+
+## Executando a aplicação localmente
+
+Para executar a aplicação do projeto, você precisa:
+
+1. Clonar este repositório ou fazer um fork: <br/>
+   `git clone https://github.com/1manuelc/dio-react-proj05-telalogin.git`
+
+2. Instalar as dependências necessárias á partir do seu gerenciador de pacotes (não é obrigatório ser npm): <br/>
+   `npm install`
+
+3. Executar o comando: </br>
+   `npm run dev`
